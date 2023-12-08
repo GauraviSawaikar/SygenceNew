@@ -426,12 +426,12 @@ Preloader Area CSS
 }
 
 .btn {
-	color: #fff;
+	color: #fff !important;
 	padding: 13px 25px;
 	font-size: 14px;
 	text-transform: capitalize;
 	font-weight: 500;
-	background: #1A76D1;
+	background: #0500FF;
 	position: relative;
 	box-shadow: none;
 	display: inline-block;
@@ -474,8 +474,8 @@ Preloader Area CSS
 }
 .section-title{
 	text-align: center;
-    margin-bottom: 60px;
-    padding: 0 250px;
+    margin-bottom: 40px;
+    padding: 0 80px;
 }
 .section-title h2 {
 	font-size: 32px;
