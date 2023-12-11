@@ -1,167 +1,42 @@
-.imageBackground {
-    margin: 0px auto 0px auto;
-    box-sizing: border-box;
-    padding: 20px 20px 20px 20px;
-    width: calc(100% - 13.4011rem);
-    background-color: #3d3d3d;
-    border-radius: 19px;
-}
-
+/* all page required */
 .text-light {
     color: #e5e5e5 !important;
 }
 
-.solutionImageBox {
-    box-sizing: border-box;
-    padding: 4rem 2.328rem 5.8rem 2.272rem;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    border: solid 0.1rem rgba(95, 164, 234, 0.5500000119);
-    background-color: #1f1f1f;
-    border-radius: 1rem;
+.active {
+    color: #60AEF0 !important;
 }
 
-.solutionImage {
-    /* margin-right: 2rem; */
-    box-sizing: border-box;
-    padding: 4rem 1.25rem 2.3rem 1.25rem;
-    height: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    border: solid 0.1rem rgba(95, 164, 234, 0.5500000119);
-    background-color: #1f1f1f;
-    border-radius: 1rem;
-    flex-shrink: 0;
-}
-
-.margin-bottom20 {
-    margin-bottom: 20px;
-}
-
-.forImage {
-    margin-bottom: 2.2767rem;
-    width: 5.9rem;
-    height: 6.0233rem;
-    object-fit: contain;
-    vertical-align: top;
-    flex-shrink: 0;
-}
-
-.forText {
-    text-align: center;
-    color: white;
-    font-size: 24px;
+.button_font_and_size {
     font-family: Lato;
-    font-weight: 600;
-}
-
-@media (max-width: 1200px) {
-    .forLanguage {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .forShowSmallScreen {
-        display: block;
-        /* or any other appropriate display property */
-    }
-}
-
-.boxCss {
-    background-color: rgba(255, 255, 255, 0.1099999994);
-    border-radius: .25rem;
-    padding: 25px 60px;
-}
-
-.customAboutText {
-    color: #60AEF0;
-    text-align: center;
-    font-family: Lato;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
+    font-weight: 500;
+}
+
+.page_redirect_text_h4 {
+    color: white;
+    font-size: 16px;
     font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.48px;
 }
 
-.customAboutImage {
-    box-sizing: border-box;
-    padding: 1rem;
-    height: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
+.round_arrow {
+    height: 25px;
+    margin: 0px 0px 12px 14px;
 }
 
-@media (min-width: 1600px) {
-    .container {
-        max-width: 1450px !important;
-        /* or any other appropriate display property */
-    }
+.black_bg {
+    background-color: #030B15;
 }
 
-@media (min-width: 992px) {
-    #hideDiv {
-        display: none;
-    }
-
-    #displayDiv {
-        display: flex;
-    }
-}
-
-@media (max-width: 991px) {
-    #hideDiv {
-        display: flex;
-    }
-
-    #displayDiv {
-        display: none;
-    }
-}
-
+/* custom css for main page ---> start*/
 .ellipse-background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    transform: rotate(82.42deg);
-    transform-origin: 0 0;
-    background: linear-gradient(133deg, #2F81AE 0%, #5431C1 100%);
-    box-shadow: 225.82049560546875px 225.82049560546875px 225.82049560546875px;
-    border-radius: 9999px;
-    filter: blur(225.82px);
-}
-
-.container {
-    position: relative;
-    z-index: 1;
-    /* Ensure it's above the background */
-}
-
-.ellipse-containerDiv {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.ellipse-backgroundDiv {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: rotate(82.42deg);
+    transform: rotate(91.42deg);
     transform-origin: 0 0;
     background: linear-gradient(133deg, #2F81AE 0%, #5431C1 100%);
     box-shadow: 225.82049560546875px 225.82049560546875px 225.82049560546875px;
@@ -188,32 +63,6 @@
     padding: 45px 35px 30px 35px;
 }
 
-.single-table-industries {
-    background: #1f1f1f;
-    border: 4px solid #60AEF0;
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    padding: 25px 10px 20px 20px;
-    height: 100%;
-}
-
-@media (min-width: 992px) {
-    .single-table-industries {
-        width: 75%;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 991px) {
-    .single-table-industries {
-        width: 100%;
-        margin-top: 15px;
-    }
-}
-
-
 .home_section_three_title {
     color: #F9F9F9;
     font-size: 24px;
@@ -228,40 +77,142 @@
     font-weight: 400;
 }
 
-.solutionBullets {
-    height: 25px;
-    width: 25px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 0px;
-    margin-right: 16px;
+.main_head_text {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
 }
 
-.solutionPoints {
+.sub_main_head {
     color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.paragraph_text {
+    color: #ABABAB;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32.40px;
+}
+
+.bg-img-main-page {
+    background-image: url('img/citypng-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0px;
+}
+
+.client_paragraph {
+    color: #D1D7E2;
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: 300;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.text_capabilities {
+    color: #F9F9F9;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.img-cap {
+    height: 15px;
+    margin: 6px 0px 5px 14px;
+}
+
+/* custom css for main page ---> end*/
+
+
+/* Use in index main page for solution and industries */
+.solutionImage {
+    box-sizing: border-box;
+    padding: 4rem 1.25rem 2.3rem 1.25rem;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: solid 0.1rem rgba(95, 164, 234, 0.5500000119);
+    background-color: #1f1f1f;
+    border-radius: 1rem;
+    flex-shrink: 0;
+}
+
+/* use in about us and index page */
+.margin-bottom20 {
+    margin-bottom: 20px;
+}
+
+/* use in about us and index page */
+.forImage {
+    margin-bottom: 2.2767rem;
+    width: 5.9rem;
+    height: 6.0233rem;
+    object-fit: contain;
+    vertical-align: top;
+    flex-shrink: 0;
+}
+
+/* use in about us page */
+.forText {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: Lato;
+    font-weight: 600;
+}
+
+.boxCss {
+    background-color: rgba(255, 255, 255, 0.1099999994);
+    border-radius: .25rem;
+    padding: 25px 60px;
+}
+
+.about-us-guide-content {
+    color: #3d3d3d;
     font-size: 24px;
     font-weight: 600;
     text-align: left;
 }
 
-@media (min-width: 992px) {
-    .hiddenImagesDiv {
-        display: none;
-    }
+/* use in all page --> end */
 
-    .displayImagesDiv {
-        display: flex;
-    }
+/* use in about page ---> start */
+.customAboutText {
+    color: #60AEF0;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.48px;
 }
 
-@media (max-width: 991px) {
-    .hiddenImagesDiv {
-        display: flex;
-    }
+.customAboutImage {
+    box-sizing: border-box;
+    padding: 1rem;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+}
 
-    .displayImagesDiv {
-        display: none;
-    }
+/* use in about page ---> end */
+
+/* Industries CSS */
+.single-table-industries {
+    background: #1f1f1f;
+    border: 4px solid #60AEF0;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 25px 10px 20px 20px;
+    height: 100%;
 }
 
 .solutionImageLarge {
@@ -279,25 +230,37 @@
     border-radius: 25px;
 }
 
-.active {
-    color: #60AEF0 !important;
+/* Industries CSS -> end*/
+
+/* about us and industries */
+.solutionBullets {
+    height: 25px;
+    width: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0px;
+    margin-right: 16px;
 }
 
-.about-us-guide-content {
-    color: #3d3d3d;
+/* solution and industries */
+.solutionPoints {
+    color: white;
     font-size: 24px;
     font-weight: 600;
     text-align: left;
 }
 
-.solution-main-title{
+/* contact and solution */
+.solution-main-title {
     color: white;
     font-size: 64px;
     font-weight: 700;
     text-align: center;
 }
 
-.faq-title{
+
+/* contact start */
+.faq-title {
     color: #C6D5E9;
     font-size: 24px;
     font-family: Lato;
@@ -306,7 +269,7 @@
     line-height: 50px;
 }
 
-.faq-image{
+.faq-image {
     height: 60px;
     width: 60px;
     margin-top: auto;
@@ -326,21 +289,21 @@
     margin-bottom: 40px;
 }
 
-.text-table-contact{
+.text-table-contact {
     color: #fff;
     font-size: 32px;
     font-weight: 600;
     margin: auto 0px;
 }
 
-.sub-text-table-contact{
+.sub-text-table-contact {
     color: #C6D5E9;
     font-size: 24px;
     font-weight: 400;
     line-height: 34.50px;
 }
 
-.contact-form-title{
+.contact-form-title {
     color: white;
     font-size: 32px;
     font-family: Lato;
@@ -349,7 +312,7 @@
     margin-bottom: auto;
 }
 
-.contact-form-image{
+.contact-form-image {
     height: 40px;
     width: 40px;
     margin-top: auto;
@@ -358,23 +321,23 @@
     margin-right: 16px;
 }
 
-.form-group{
+.form-group {
     margin-bottom: 30px
 }
 
-.form-input{
+.form-input {
     width: 100%;
     height: 50px;
     border: 1px solid #eee;
     text-transform: capitalize;
-    padding: 0px 18px;
+    padding: 10px 15px !important;
     color: #555;
     font-size: 14px;
     font-weight: 400;
     border-radius: 4px;
 }
 
-.phone-number{
+.phone-number {
     color: white;
     font-size: 40px;
     font-family: Lato;
@@ -382,6 +345,49 @@
     line-height: 40px;
 }
 
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.invalid-input {
+    border: 1px solid red !important;
+}
+
+.submission-message {
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Adjust as needed for positioning */
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+    z-index: 999; /* Ensure it appears above other content */
+    transition: opacity 0.5s ease;
+}
+
+
+/* Add animation for the toast message (you can adjust the animation duration) */
+@keyframes slide-up {
+    from {
+        transform: translateX(-50%) translateY(100%);
+    }
+    to {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.submission-message.show {
+    animation: slide-up 0.5s ease;
+}
+
+/* contact end */
+
+/* solution page */
 .single-table-solutions {
     background: #1f1f1f;
     border: 4px solid #60AEF0;
@@ -393,7 +399,7 @@
     margin-bottom: 40px;
 }
 
-.solutionsBullets{
+.solutionsBullets {
     height: 35px;
     width: 36px;
     margin-top: auto;
@@ -402,16 +408,14 @@
     margin-right: 16px;
 }
 
-.solImage{
+.solImage {
     text-align: center;
     padding: 15px;
 }
 
-.solImageText{
+.solImageText {
     color: #FFF;
-
     text-align: center;
-    /* H2 */
     font-family: Lato;
     font-size: 36px;
     font-style: normal;
@@ -419,7 +423,32 @@
     line-height: normal;
 }
 
-.solImageTextImage{
+.solImageTextImage {
     height: 120px;
     width: 120px;
+}
+
+/* capabilities */
+.capa_first_head_text{
+    color: #202020;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.cap_icon{
+    height: 50px;
+    width: 50px;
+    margin: 0px 20px 12px 0px;
+}
+
+.cap_line_text{
+    color: #231F20;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
 }

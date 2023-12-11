@@ -171,7 +171,7 @@ select,
 optgroup,
 textarea {
 	color: #424646;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 	font-weight:400;
 	font-size: 14px;
 	line-height: 24px;
