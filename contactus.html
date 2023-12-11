@@ -38,6 +38,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="custom.css">
+        <link rel="stylesheet" href="customResponsive.css">
         <link rel="stylesheet" href="css/responsive.css">
 		
     </head>
@@ -79,7 +80,7 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="#" class="btn">Request a demo</a>
+									<a href="contactus.html" class="btn button_font_and_size">Request a demo</a>
 								</div>
 							</div>
 							<div class="col-lg-1 forLanguage">
@@ -121,10 +122,10 @@
 			</div>
 		</section>
 
-		<section class="newsletter" style="background-color: #030B15;">
+		<section class="" style="background-color: #030B15;">
 			<div class="container">
 				<div class="row" >
-					<div class="col-lg-12 col-sm-12 col-md-12">
+					<div class="col-lg-12 col-sm-12 col-md-12" style="margin-top: -50px;">
 						<div class="single-table-contact " >
 							<div class="col-12 d-flex mb-3">
 								<img src="img/phone.png" class="contact-form-image">
@@ -135,52 +136,68 @@
 							<div class="row">
 								<div class="col-lg-6 col-12">
 									<div class="form-group">
-										<input type="text" class="form-input" name="firstName" placeholder="First Name" required="">
+										<input type="text" class="form-input" id="firstName" name="firstName" placeholder="First Name*" required onblur="validateInput(this)">
+										<div id="firstNameError" class="error-message"></div>
 									</div>
 								</div>
+								
 								<div class="col-lg-6 col-12">
 									<div class="form-group">
-										<input type="text" class="form-input" name="lastName" placeholder="Last Name" required="">
+										<input type="text" class="form-input" id="lastName" name="lastName" placeholder="Last Name*" required onblur="validateInput(this)">
+										<div id="lastNameError" class="error-message"></div>
 									</div>
 								</div>
+								
 								<div class="col-lg-6 col-12">
 									<div class="form-group">
-										<input type="text" class="form-input" name="jobTitle" placeholder="Job Title" required="">
+										<input type="text" class="form-input" id="jobTitle" name="jobTitle" placeholder="Job Title*" required onblur="validateInput(this)">
+										<div id="jobTitleError" class="error-message"></div>
 									</div>
 								</div>
+								
 								<div class="col-lg-6 col-12">
 									<div class="form-group">
-										<input type="email" class="form-input" name="email" placeholder="Work Email" required="">
+										<input type="email" class="form-input" id="email" name="email" placeholder="Work Email*" required onblur="validateInput(this)">
+										<div id="emailError" class="error-message"></div>
 									</div>
 								</div>
+								
 								<div class="col-lg-6 col-12">
 									<div class="form-group">
-										<input type="number" class="form-input" name="phone" placeholder="Phone" required="">
+										<input type="number" class="form-input" id="phone" name="phone" placeholder="Phone*" required onblur="validateInput(this)">
+										<div id="phoneError" class="error-message"></div>
 									</div>
 								</div>
+								
 								<div class="col-lg-6 col-12">
 									<div class="form-group">
-										<input type="text" class="form-input" name="country_region" placeholder="Country/Region" required="">
+										<input type="text" class="form-input" id="countryRegion" name="countryRegion" placeholder="Country/Region*" required onblur="validateInput(this)">
+										<div id="countryRegionError" class="error-message"></div>
 									</div>
 								</div>
+								
 								<div class="col-lg-12 col-12">
 									<div class="form-group">
-										<input type="text" class="form-input" name="products" placeholder="Product of Interest" required="">
+										<input type="text" class="form-input" id="products" name="products" placeholder="Product of Interest">
+										<!-- <div id="productsError" class="error-message"></div> -->
 									</div>
 								</div>
+								
 								<div class="col-lg-12 col-12">
 									<div class="form-group">
-										<textarea class="form-input" name="message" placeholder="Question/Comments" required=""></textarea>
+										<textarea class="form-input" id="message" name="message" placeholder="Question/Comments"></textarea>
+										<!-- <div id="messageError" class="error-message"></div> -->
 									</div>
 								</div>
-								<p style="color: white; font-size: 18px; font-family: Raleway; font-weight: 300;">By registering, you confirm that you agree to the storing and processing of your personal data by Sygence as described in the Privacy Statement.</p>
-								<br>
-								<br>
+							
+								<p class="sub-text-table-contact" style="font-size: 16px;">By registering, you confirm that you agree to the storing and processing of your personal data by Sygence as described in the <u>Privacy Statement.</u></p>
+								
 								<div class="col-12">
 									<div class="text-center">
-										<button type="submit" class="btn" style="width: 250px;">Contact Me  </button>
+										<button type="submit" class="btn button_font_and_size" style="width: 250px; margin-top: 25px;" onclick="validateForm()">Contact Me</button>
 									</div>
 								</div>
+								<div class="submission-message" id="submissionMessage"></div>
 							</div>
 						</div>
 					</div>
@@ -206,7 +223,7 @@
 							<p class="sub-text-table-contact pb-3">Contact our 24/7 customer support.</p> <br>
 							<div class="col-12">
 								<div class="text-center">
-									<button type="submit" class="btn" style="width: 250px;">Send Feedback  </button>
+									<button type="submit" class="btn button_font_and_size" style="width: 250px;">Send Feedback  </button>
 								</div>
 							</div>
 						</div>
@@ -244,7 +261,7 @@
 							<br>
 							<div class="single-footer text-center">
 								<div class="button">
-									<button type="submit" class="btn" style="width: 250px;">Send Feedback  </button>
+									<button type="submit" class="btn button_font_and_size" style="width: 250px;">Send Feedback  </button>
 								</div>
 							</div>
 						</div>
@@ -259,7 +276,8 @@
 					<h2 class="text-light"><strong style="font-size: 36px;font-weight: 700; ">Have a <span style="color: #61adf9;">Question?</span> </strong> </h2> <br>
 						<div class="single-footer text-center">
 							<div class="button">
-								<button type="submit" class="btn" style="width: 250px;">Contact Us </button>
+								<button type="submit" class="btn button_font_and_size" >Contact Us </button>
+								<a href="contactus.html" class="btn button_font_and_size" style="width: 250px;">Request a demo</a>
 							</div>
 						</div>
 				</div>
@@ -279,7 +297,7 @@
 							<br>
 							<div class="single-footer text-center">
 								<!-- <div class="button"> -->
-									<button type="submit" class="btn" style="width: 100%;font-family: lato;">Join Now</button>
+									<a href="contactus.html" class="btn button_font_and_size" style="width: 100%;font-family: lato;">Request a demo</a>
 								<!-- </div> -->
 							</div>
 						</div>
@@ -310,7 +328,7 @@
 						<div class="col-lg-4 col-md-4 col-12">
 							<div class="single-footer text-center">
 								<div class="button">
-									<button type="submit" class="btn" style="width: 250px;">Contact Us </button>
+									<button type="submit" class="btn button_font_and_size" style="width: 250px;">Contact Us </button>
 								</div>
 							</div>
 						</div>
@@ -343,7 +361,6 @@
 			<!--/ End Copyright -->
 		</footer>
 		<!--/ End Footer Area -->
-		<!-- <img class="background-glow-2-Cj3" src="img/background-glow-2.png" /> -->
 		<!-- jquery Min JS -->
         <script src="js/jquery.min.js"></script>
 		<!-- jquery Migrate JS -->
@@ -384,5 +401,110 @@
 		<script src="js/bootstrap.min.js"></script>
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
+
+		<script>
+			function validateInput(input) {
+				var errorId = input.name + "Error";
+				var errorElement = document.getElementById(errorId);
+				if (errorElement) {
+					errorElement.innerHTML = "";
+				}
+
+				if (!input.checkValidity()) {
+					input.classList.add('invalid-input');
+					if (errorElement) {
+						errorElement.innerHTML = input.validationMessage;
+					}
+				} else {
+					input.classList.remove('invalid-input');
+				}
+			}
+
+			function validateForm() {
+				var inputs = document.querySelectorAll('.form-input');
+				var isValid = true;
+
+				inputs.forEach(function (input) {
+					validateInput(input);
+
+					if (!input.checkValidity()) {
+						isValid = false;
+					}
+				});
+
+				if (isValid) {
+					submitForm();
+				}
+			}
+
+			function submitForm() {
+				var firstName = document.getElementById("firstName").value;
+				var lastName = document.getElementById("lastName").value;
+				var jobTitle = document.getElementById("jobTitle").value;
+				var email = document.getElementById("email").value;
+				var phone = document.getElementById("phone").value;
+				var countryRegion = document.getElementById("countryRegion").value;
+				var products = document.getElementById("products").value;
+				var message = document.getElementById("message").value;
+
+				var jsonData = {
+					firstName: firstName,
+					lastName: lastName,
+					jobTitle: jobTitle,
+					email: email,
+					phone: phone,
+					countryRegion: countryRegion,
+					products: products,
+					message: message
+				};
+
+				$.ajax({
+					url: "mail.php",
+					method: "post",
+					data: jsonData,
+					dataType: "text",
+					success: function (response) {
+						console.log("success	");
+						var submissionMessage = document.getElementById("submissionMessage");
+						submissionMessage.innerHTML = response;
+						submissionMessage.style.display = "block";
+						submissionMessage.style.backgroundColor = "#26db16";
+
+						document.getElementById("firstName").value = "";
+						document.getElementById("lastName").value = "";
+						document.getElementById("jobTitle").value = "";
+						document.getElementById("email").value = "";
+						document.getElementById("phone").value = "";
+						document.getElementById("countryRegion").value = "";
+						document.getElementById("products").value = "";
+						document.getElementById("message").value = "";
+
+						setTimeout(function() {
+							submissionMessage.style.opacity = 0;
+							setTimeout(function() {
+								submissionMessage.style.display = "none";
+								submissionMessage.style.opacity = 1;
+							}, 500);
+						}, 3000);
+					},
+					error: function (response) {
+						console.log("error");
+						console.log(response);
+						var submissionMessage = document.getElementById("submissionMessage");
+						submissionMessage.innerHTML = response.responseText;
+						submissionMessage.style.display = "block";
+						submissionMessage.style.backgroundColor = "#f54c40";
+
+						setTimeout(function() {
+							submissionMessage.style.opacity = 0;
+							setTimeout(function() {
+								submissionMessage.style.display = "none";
+								submissionMessage.style.opacity = 1;
+							}, 500);
+						}, 3000);
+					}
+				});
+			}
+		</script>
     </body>
 </html>

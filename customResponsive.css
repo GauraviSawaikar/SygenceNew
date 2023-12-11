@@ -1,0 +1,75 @@
+/* main Container */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1450px !important;
+    }
+}
+
+/* use in all page */
+@media (max-width: 1200px) {
+    .forLanguage {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .forShowSmallScreen {
+        display: block;
+    }
+}
+
+/* Capabilities */
+@media (min-width: 992px) {
+    #hideDiv {
+        display: none;
+    }
+
+    #displayDiv {
+        display: flex;
+    }
+}
+
+@media (max-width: 991px) {
+    #hideDiv {
+        display: flex;
+    }
+
+    #displayDiv {
+        display: none;
+    }
+}
+
+/* Industries */
+@media (min-width: 992px) {
+    .single-table-industries {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .single-table-industries {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hiddenImagesDiv {
+        display: none;
+    }
+
+    .displayImagesDiv {
+        display: flex;
+    }
+}
+
+@media (max-width: 991px) {
+    .hiddenImagesDiv {
+        display: flex;
+    }
+
+    .displayImagesDiv {
+        display: none;
+    }
+}
