@@ -230,6 +230,13 @@
     border-radius: 25px;
 }
 
+.industryPoints {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+}
+
 /* Industries CSS -> end*/
 
 /* about us and industries */
@@ -240,14 +247,6 @@
     margin-bottom: auto;
     margin-left: 0px;
     margin-right: 16px;
-}
-
-/* solution and industries */
-.solutionPoints {
-    color: white;
-    font-size: 24px;
-    font-weight: 600;
-    text-align: left;
 }
 
 /* contact and solution */
@@ -451,4 +450,11 @@
     font-weight: 600;
     line-height: normal;
     text-decoration-line: underline;
+}
+
+.solutionPoints {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
 }
