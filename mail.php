@@ -16,7 +16,7 @@ if (isset($_POST['firstName'])) {
     $products = $_POST['products'];
     $message = $_POST['message'];
 
-    $to = 'rama.shirodkar@bittint.com';  // PUT YOUR EMAIL ID
+    $to = '';  // PUT YOUR EMAIL ID
     $subject = 'Request a Call';
     $message_body = "First Name: $firstName<br>";
     $message_body .= "Last Name: $lastName<br>";
@@ -36,8 +36,8 @@ if (isset($_POST['firstName'])) {
         $mail->SMTPSecure = "ssl";
         $mail->Host = "smtp.zoho.in"; 
         $mail->Port = 465; 
-        $mail->Username = 'rama.shirodkar@bittint.com'; 
-        $mail->Password = 'Zrwk4ukdDux8'; 
+        $mail->Username = '';  // PUT YOUR EMAIL ID
+        $mail->Password = ''; //App password
 
         $mail->setFrom($to, $firstName); 
         $mail->addAddress($to);
