@@ -163,7 +163,7 @@ Version:	1.1
 			Clients Slider JS
 		=================================*/ 
 		$('.clients-slider').owlCarousel({
-			items:5,
+			items:4,
 			autoplay:true,
 			autoplayTimeout:3500,
 			margin:15,
@@ -183,7 +183,7 @@ Version:	1.1
 					items:3,
 				},
 				1170: {
-					items:5,
+					items:4,
 				},
 			}
 		});
