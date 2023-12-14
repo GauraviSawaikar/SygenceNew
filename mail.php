@@ -33,11 +33,11 @@ if (isset($_POST['firstName'])) {
         $mail->IsSMTP();
         $mail->SMTPAuth = true;
         $mail->IsHTML(true);
-        $mail->SMTPSecure = "ssl";
-        $mail->Host = "smtp.zoho.in"; 
-        $mail->Port = 465; 
-        $mail->Username = '';  // PUT YOUR EMAIL ID
-        $mail->Password = ''; //App password
+        $mail->SMTPSecure = "tls"; // Change to "tls" for port 587
+        $mail->Host = "smtp.hostinger.in"; // Change to your SMTP host
+        $mail->Port = 587; // Change to your SMTP port
+        $mail->Username = 'hello@sygence.in'; // PUT YOUR EMAIL ID
+        $mail->Password = 'Welcome@123'; //App password
 
         $mail->setFrom($to, $firstName); 
         $mail->addAddress($to);
