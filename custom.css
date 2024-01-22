@@ -8,7 +8,7 @@
 }
 
 .button_font_and_size {
-    font-family: Lato;
+    font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -27,6 +27,46 @@
 
 .black_bg {
     background-color: #030B15;
+}
+
+.btn:active{
+    background-color: #2563EB;
+}
+
+.btn.primary{
+    background-color: transparent;;
+    /* color: #000 !important; */
+    border: 2px solid #0500FF;
+    margin-left: 20px   ;
+}
+
+.btn.primary:before{
+    background-color: rgba(59, 130, 246, 0.50);
+    color: #BFDBFE !important;
+    /* border: 2px solid #3B82F6; */
+    border-radius: 8px;
+}
+
+.footerCopyright{
+    color: #C6D6E9;
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.copyright-content{
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.footerSocial{
+    color: #DAE3EF;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 /* custom css for main page ---> start*/
@@ -67,8 +107,8 @@
     color: #F9F9F9;
     font-size: 24px;
     font-weight: 400;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .industries_subtitle {
@@ -84,9 +124,11 @@
 }
 
 .sub_main_head {
-    color: white;
-    font-size: 36px;
+    color: #5FACEF;
+    font-size: 64px;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
 }
 
 .paragraph_text {
@@ -106,7 +148,6 @@
 .client_paragraph {
     color: #D1D7E2;
     font-size: 18px;
-    font-family: Lato;
     font-weight: 300;
     margin-left: 50px;
     margin-top: 10px;
@@ -129,7 +170,7 @@
 /* Use in index main page for solution and industries */
 .solutionImage {
     box-sizing: border-box;
-    padding: 4rem 1.25rem 2.3rem 1.25rem;
+    padding: 20px 15px 25px 15px;
     height: 100%;
     align-items: center;
     display: flex;
@@ -147,7 +188,7 @@
 
 /* use in about us and index page */
 .forImage {
-    margin-bottom: 2.2767rem;
+    margin-bottom: 13px;
     width: 5.9rem;
     height: 6.0233rem;
     object-fit: contain;
@@ -160,14 +201,12 @@
     text-align: center;
     color: white;
     font-size: 24px;
-    font-family: Lato;
     font-weight: 600;
 }
 
 .boxCss {
     background-color: rgba(255, 255, 255, 0.1099999994);
     border-radius: .25rem;
-    padding: 25px 60px;
 }
 
 .about-us-guide-content {
@@ -183,7 +222,6 @@
 .customAboutText {
     color: #60AEF0;
     text-align: center;
-    font-family: Lato;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -216,8 +254,8 @@
 }
 
 .solutionImageLarge {
-    height: 280px;
-    width: 75%;
+    height: 330px;
+    width: 100%;
     border-radius: 25px;
     display: block;
     margin-left: auto;
@@ -262,7 +300,6 @@
 .faq-title {
     color: #C6D5E9;
     font-size: 24px;
-    font-family: Lato;
     font-weight: 400;
     text-decoration: underline;
     line-height: 50px;
@@ -305,7 +342,6 @@
 .contact-form-title {
     color: white;
     font-size: 32px;
-    font-family: Lato;
     font-weight: 600;
     margin-top: auto;
     margin-bottom: auto;
@@ -321,27 +357,28 @@
 }
 
 .form-group {
-    margin-bottom: 30px
+    margin-bottom: 50px
 }
 
 .form-input {
     width: 100%;
-    height: 50px;
+    /* height: 50px; */
     border: 1px solid #eee;
     text-transform: capitalize;
     padding: 10px 15px !important;
     color: #555;
     font-size: 14px;
     font-weight: 400;
-    border-radius: 4px;
+    border-radius: 12px;
 }
 
 .phone-number {
-    color: white;
-    font-size: 40px;
+    color: #FFF;
     font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 64px;
 }
 
 .error-message {
@@ -415,7 +452,6 @@
 .solImageText {
     color: #FFF;
     text-align: center;
-    font-family: Lato;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -425,12 +461,16 @@
 .solImageTextImage {
     height: 120px;
     width: 120px;
+    margin-bottom: 8px;
+}
+
+.margin_bottom_css{
+    margin-bottom: 20px;
 }
 
 /* capabilities */
 .capa_first_head_text{
     color: #202020;
-    font-family: Lato;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -444,6 +484,7 @@
 }
 
 .cap_line_text{
+    font-family: Inter;
     color: #231F20;
     font-size: 24px;
     font-style: normal;
@@ -457,4 +498,25 @@
     font-size: 18px;
     font-weight: 500;
     text-align: left;
+}
+
+.background-images{
+    width: 100% !important;
+    height: 100% !important;
+    background: url('img/landing.png') !important;
+    background-size: cover !important;
+}
+
+.background-images-about{
+    width: 100% !important;
+    height: 100% !important;
+    background: url('img/aboutus.png') !important;
+    background-size: cover !important;
+}
+
+.background-images-all{
+    width: 100% !important;
+    height: 100% !important;
+    background: url('img/aboutus.png') !important;
+    background-size: cover !important;
 }

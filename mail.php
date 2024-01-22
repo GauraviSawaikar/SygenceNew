@@ -16,7 +16,7 @@ if (isset($_POST['firstName'])) {
     $products = $_POST['products'];
     $message = $_POST['message'];
 
-    $to = '';  // PUT YOUR EMAIL ID
+    $to = 'hello@sygence.in';  // PUT YOUR EMAIL ID
     $subject = 'Request a Call';
     $message_body = "First Name: $firstName<br>";
     $message_body .= "Last Name: $lastName<br>";
