@@ -49,7 +49,7 @@ Version:	1.1
 	Global CSS 
 ===============================*/
 /* Include the Lato font */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@400;700&family=Inter:wght@400;700&display=swap');
 
 /* Include the Source Sans Pro font */
 /* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap'); */
@@ -132,7 +132,7 @@ body{
 	bottom: 15px;
 	right: 15px;
 	padding: 10px 20px;
-	background: #1a76d1;
+	background: #0500FF;
 	color: #fff;
 	font-size: 25px;
 	width: 45px;
@@ -144,7 +144,7 @@ body{
 	box-shadow: 0px 0px 10px #00000026;
 }
 #scrollUp:hover{
-	background:#2C2D3F;
+	background:#1D68E3;
 }
 /* Color Plate */
 .color-plate {
@@ -1010,7 +1010,7 @@ body{
 }
 /* Start Faq CSS */
 .why-choose{
-	background:#fff;
+	/* background:#fff; */
 }
 .why-choose .choose-right{
 	height:100%;
@@ -4005,19 +4005,19 @@ body{
 	width: 34px;
 	line-height: 34px;
 	text-align: center;
-	border: 1px solid #fff;
+	/* border: 1px solid #fff; */
 	text-align: center;
 	padding: 0;
-	border-radius: 100%;
+	/* border-radius: 100%; */
 	display: block;
 	color:#fff;
 	font-size: 16px;
 }
-.footer .single-footer .social li a:hover{
+/* .footer .single-footer .social li a:hover{
 	color:#1A76D1;
 	background:#fff;
 	border-color:transparent;
-}
+} */
 .footer .single-footer .social li a i{
 	
 }
