@@ -520,3 +520,9 @@
     background: url('img/aboutus.png') !important;
     background-size: cover !important;
 }
+
+.imageCenterCss{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
