@@ -136,5 +136,7 @@
         margin: 10px;
     }
 
-    
+    .mobileViewTextCenter{
+        text-align: center;
+    }
 }
