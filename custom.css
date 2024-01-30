@@ -211,7 +211,7 @@
 
 .about-us-guide-content {
     color: #3d3d3d;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 600;
     text-align: left;
 }
@@ -220,7 +220,7 @@
 
 /* use in about page ---> start */
 .customAboutText {
-    color: #60AEF0;
+    color: #ffffff;
     text-align: center;
     font-size: 20px;
     font-style: normal;
